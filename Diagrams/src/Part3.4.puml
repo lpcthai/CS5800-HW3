@@ -1,0 +1,52 @@
+@startuml
+pd1 *-- sf
+sf *-- ph
+sf *-- c
+sf *-- pub
+pub *-- f1
+pub *-- f2
+pub *-- f3
+pd1 *-- ip
+pd1 *-- rf
+
+object "<u>php_demo1:Folder</u>" as pd1 {
+  name = "php_demo1"
+}
+
+object "<u>SourceFiles:Folder</u>" as sf {
+  name = "Source Files"
+}
+
+object "<u>phalcon:Folder</u>" as ph {
+  name = ".phalcon"
+}
+
+object "<u>cache:Folder</u>" as c {
+  name = "cache"
+}
+
+object "<u>public:Folder</u>" as pub {
+  name = "public"
+}
+
+object "<u>htaccess:File</u>" as f1 {
+  name = ".htaccess"
+}
+
+object "<u>htrouter:File</u>" as f2 {
+  name = ".htrouter.php"
+}
+
+object "<u>index:File</u>" as f3 {
+  name = "index.html"
+}
+
+object "<u>IncludePath:Folder</u>" as ip {
+  name = "Include Path"
+}
+
+object "<u>RemoteFiles:Folder</u>" as rf {
+  name = "Remote Files"
+}
+
+@enduml
